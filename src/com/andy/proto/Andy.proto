@@ -1,0 +1,16 @@
+package andy;
+
+option java_package = "com.andy.proto";//java包目录
+option java_outer_classname = "Andys";//java类名
+
+message Param {
+	required int32 id = 1;
+	required bytes bytes = 2;
+}
+
+message RequestParamProto{
+	required string cls = 1;
+	required string mth = 2;
+	required string type = 3;
+	required string param = 4;
+}
